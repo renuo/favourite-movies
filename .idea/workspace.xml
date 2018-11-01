@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5b4f2b0-c91e-47aa-8c44-96e3d4f92efb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/assets/packs/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/packs/application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/packs/stylesheets.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/packs/stylesheets.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/src/javascripts/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/src/javascripts/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/home/show.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/show.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/content_security_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/content_security_policy.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/webpack/environment.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpack/environment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/webpacker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpacker.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/favourite_movies/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/favourite_movies/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/favourite_movies/app/app.template.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/favourite_movies/app/app.template.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -43,7 +36,7 @@
           <entry key="rb" value="2" />
           <entry key="scss" value="1" />
           <entry key="slim" value="1" />
-          <entry key="ts" value="8" />
+          <entry key="ts" value="10" />
           <entry key="yml" value="1" />
         </counts>
       </usages-collector>
@@ -56,7 +49,7 @@
           <entry key="Ruby" value="3" />
           <entry key="SCSS" value="1" />
           <entry key="Slim" value="1" />
-          <entry key="TypeScript" value="8" />
+          <entry key="TypeScript" value="10" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
@@ -68,26 +61,26 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="erb" value="21" />
-          <entry key="html" value="576" />
+          <entry key="html" value="703" />
           <entry key="js" value="12" />
           <entry key="json" value="19" />
           <entry key="rb" value="2" />
           <entry key="scss" value="2" />
           <entry key="slim" value="88" />
-          <entry key="ts" value="723" />
+          <entry key="ts" value="1191" />
           <entry key="yml" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="580" />
+          <entry key="HTML" value="707" />
           <entry key="JSON" value="19" />
           <entry key="JavaScript" value="12" />
           <entry key="RHTML" value="21" />
           <entry key="Ruby" value="2" />
           <entry key="SCSS" value="2" />
           <entry key="Slim" value="88" />
-          <entry key="TypeScript" value="719" />
+          <entry key="TypeScript" value="1187" />
           <entry key="YAML" value="8" />
         </counts>
       </usages-collector>
@@ -116,23 +109,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/favourite_movies/app/app.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="79" selection-start-line="15" selection-start-column="79" selection-end-line="15" selection-end-column="79" />
+            <state relative-caret-position="414">
+              <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
               <folding>
-                <element signature="e#0#51#0" expanded="true" />
+                <element signature="e#0#71#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/favourite_movies/app/app.template.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+            <state relative-caret-position="162">
+              <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -212,8 +205,8 @@
         <option value="$PROJECT_DIR$/app/views/home/show.html.slim" />
         <option value="$PROJECT_DIR$/app/assets/packs/stylesheets.scss" />
         <option value="$PROJECT_DIR$/app/assets/favourite_movies/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/app/assets/favourite_movies/app/app.template.html" />
         <option value="$PROJECT_DIR$/app/assets/favourite_movies/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/app/assets/favourite_movies/app/app.template.html" />
       </list>
     </option>
   </component>
@@ -458,12 +451,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1541080431514</updated>
-      <workItem from="1541080435347" duration="4119000" />
+      <workItem from="1541080435347" duration="5159000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4119000" />
+    <option name="totallyTimeSpent" value="5159000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="823" extended-state="0" />
@@ -637,13 +630,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/favourite_movies/app/app.template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/favourite_movies/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
@@ -654,13 +640,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@angular/forms/src/model.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="558" column="4" selection-start-line="558" selection-start-column="4" selection-end-line="558" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/favourite_movies/app/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="79" selection-start-line="15" selection-start-column="79" selection-end-line="15" selection-end-column="79" />
+        <state relative-caret-position="414">
+          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
           <folding>
-            <element signature="e#0#51#0" expanded="true" />
+            <element signature="e#0#71#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/favourite_movies/app/app.template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
         </state>
       </provider>
     </entry>

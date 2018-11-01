@@ -2,12 +2,12 @@
     <span>Favourite movies</span>
     <span class="spacer"></span>
     <mat-form-field>
-        <input matInput placeholder="Search">
+        <input matInput #searchInput (keyup)="searchKeyUp(searchInput.value)" placeholder="Search">
     </mat-form-field>
 </mat-toolbar>
 <mat-card *ngFor="let movie of movies">
     <mat-card-header>
-        <div mat-card-avatar
+        <div *ngIf="movie.Poster" mat-card-avatar
              [ngStyle]="{'background-image': 'url(' + movie.Poster +')', 'background-size': 'cover'}"></div>
         <mat-card-title>{{movie.Title}}</mat-card-title>
     </mat-card-header>
