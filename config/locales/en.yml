@@ -1,2 +1,5 @@
 en:
-  title: "Favourite movies"
+  search:
+    title: "Search movies"
+  favourite_movies:
+    title: "Favourite movies"

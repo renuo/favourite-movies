@@ -7,9 +7,15 @@
 
   <%= stylesheet_pack_tag 'stylesheets', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'search' %>
 </head>
 
 <body>
-<%= yield %>
+<nav>
+  <%= link_to 'Favourite movies', favorite_movies_path %>
+</nav>
+<content>
+  <%= yield %>
+</content>
 </body>
 </html>
