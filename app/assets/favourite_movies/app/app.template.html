@@ -2,7 +2,7 @@
     <span>Favourite movies</span>
     <span class="spacer"></span>
     <mat-form-field>
-        <input matInput #searchInput (keyup)="searchKeyUp(searchInput.value)" placeholder="Search">
+        <input matInput name="searchInput" id="searchInput" #searchInput (keyup)="searchKeyUp(searchInput.value)" placeholder="Search">
     </mat-form-field>
 </mat-toolbar>
 Your favourites:
