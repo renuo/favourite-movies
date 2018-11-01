@@ -1,6 +1,7 @@
 module Main exposing (..)
 
 import Html exposing (Html, h1, text)
+import Html.App exposing (program)
 import Html.Attributes exposing (style)
 
 -- MODEL
@@ -45,7 +46,7 @@ subscriptions model =
 
 main : Program Never Model Message
 main =
-  Html.program
+  Html.App.program
     {
       init = init,
       view = view,
