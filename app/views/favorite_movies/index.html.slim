@@ -1,0 +1,21 @@
+h1 Listing favorite_movies
+
+table
+  thead
+    tr
+      th Title
+      th
+      th
+      th
+
+  tbody
+    - @favorite_movies.each do |favorite_movie|
+      tr
+        td = favorite_movie.title
+        td = link_to 'Show', favorite_movie
+        td = link_to 'Edit', edit_favorite_movie_path(favorite_movie)
+        td = link_to 'Destroy', favorite_movie, data: { confirm: 'Are you sure?' }, method: :delete
+
+br
+
+= link_to 'New Favorite movie', new_favorite_movie_path

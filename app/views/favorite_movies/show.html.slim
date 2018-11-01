@@ -1,0 +1,9 @@
+p#notice = notice
+
+p
+  strong Title:
+  = @favorite_movie.title
+
+=> link_to 'Edit', edit_favorite_movie_path(@favorite_movie)
+'|
+=< link_to 'Back', favorite_movies_path
