@@ -2,9 +2,24 @@
   "name": "favourite-movies",
   "private": true,
   "dependencies": {
+    "@angular/animations": "^7.0.2",
+    "@angular/cdk": "^7.0.2",
+    "@angular/common": "^7.0.2",
+    "@angular/compiler": "^7.0.2",
+    "@angular/core": "^7.0.2",
+    "@angular/forms": "^7.0.2",
+    "@angular/material": "^7.0.2",
+    "@angular/platform-browser": "^7.0.2",
+    "@angular/platform-browser-dynamic": "^7.0.2",
     "@rails/webpacker": "3.5",
+    "core-js": "^2.5.7",
+    "html-loader": "^0.5.5",
     "rails-ujs": "^5.2.1",
-    "turbolinks": "^5.2.0"
+    "rxjs": "^6.3.3",
+    "ts-loader": "3.5.0",
+    "turbolinks": "^5.2.0",
+    "typescript": "^3.1.5",
+    "zone.js": "^0.8.26"
   },
   "devDependencies": {
     "webpack-dev-server": "2.11.2"
