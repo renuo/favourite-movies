@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {map} from "rxjs/operators";
-import {Movie} from "./movie";
+import {FavouriteMovie, Movie} from "./movie";
 import {Observable} from "rxjs";
 
 @Injectable()
@@ -13,6 +13,10 @@ export class MovieService {
 
   fetchMovies(search: string): Observable<Movie[]> {
     return this.http.get(`${this.API_URL}${search}`).pipe(map(response => response['Search']));
+  }
+
+  fetchFavourites(): Observable<any> {
+    return this.http.get(this.LOCAL_API_URL);
   }
 
   saveFavourite(movie: Movie) {

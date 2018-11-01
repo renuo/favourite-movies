@@ -1,4 +1,9 @@
 class FavouriteMoviesController < ApplicationController
+  def index
+    @movies = FavouriteMovie.all
+    render json: @movies
+  end
+
   def create
     @movie = FavouriteMovie.new(favourite_movie_params)
     if @movie.save

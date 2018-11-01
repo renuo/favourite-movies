@@ -5,6 +5,18 @@
         <input matInput #searchInput (keyup)="searchKeyUp(searchInput.value)" placeholder="Search">
     </mat-form-field>
 </mat-toolbar>
+Your favourites:
+<mat-card *ngFor="let movie of favouriteMovies">
+    <mat-card-header>
+        <div *ngIf="movie.poster" mat-card-avatar
+             [ngStyle]="{'background-image': 'url(' + movie.poster +')', 'background-size': 'cover'}"></div>
+        <mat-card-title>{{movie.title}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        Movie from {{movie.year}}
+    </mat-card-content>
+</mat-card>
+Search results:
 <mat-card *ngFor="let movie of movies">
     <mat-card-header>
         <div *ngIf="movie.Poster" mat-card-avatar

@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {MovieService} from "./movie.service";
-import {Movie} from "./movie";
+import {FavouriteMovie, Movie} from "./movie";
 import appTemplate from  './app.template.html';
 import {debounceTime} from "rxjs/operators";
 import {Subject} from "rxjs";
@@ -12,6 +12,7 @@ import {Subject} from "rxjs";
 export class AppComponent implements OnInit {
   private subject: Subject<string> = new Subject();
   public movies: Movie[];
+  public favouriteMovies: FavouriteMovie[];
 
   constructor(public movieService: MovieService) {
   }
@@ -25,10 +26,13 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.movieService.fetchFavourites().subscribe(movies => this.favouriteMovies = movies);
     this.subject.pipe(debounceTime(400)).subscribe(term => this.searchMovies(term));
   }
 
   saveFavourite(movie: Movie) {
-    this.movieService.saveFavourite(movie).subscribe(data => console.log(data));
+    this.movieService.saveFavourite(movie).subscribe(data => {
+      this.favouriteMovies.push(data as FavouriteMovie);
+    });
   }
 }
