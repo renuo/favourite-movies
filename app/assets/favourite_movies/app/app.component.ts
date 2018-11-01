@@ -27,4 +27,8 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.subject.pipe(debounceTime(400)).subscribe(term => this.searchMovies(term));
   }
+
+  saveFavourite(movie: Movie) {
+    this.movieService.saveFavourite(movie).subscribe(data => console.log(data));
+  }
 }

@@ -15,7 +15,7 @@
         Movie from {{movie.Year}}
     </mat-card-content>
     <mat-card-actions>
-        <button mat-raised-button color="primary">
+        <button mat-raised-button color="primary" (click)="saveFavourite(movie)">
             <mat-icon>star</mat-icon>
         </button>
     </mat-card-actions>
