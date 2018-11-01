@@ -4,12 +4,12 @@
 # For further information see the following documentation
 # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy
 
-Rails.application.config.content_security_policy do |policy|
-  if Rails.env.development?
-    policy.script_src :self, :https, :unsafe_eval
-  else
-    policy.script_src :self, :https
-  end
+# Rails.application.config.content_security_policy do |policy|
+#   if Rails.env.development?
+#     policy.script_src :self, :https, :unsafe_eval
+#   else
+#     policy.script_src :self, :https
+#   end
 
 #   policy.default_src :self, :https
 #   policy.font_src    :self, :https, :data
@@ -20,7 +20,7 @@ Rails.application.config.content_security_policy do |policy|
 
 #   # Specify URI for violation reports
 #   # policy.report_uri "/csp-violation-report-endpoint"
-end
+# end
 
 # If you are using UJS then enable automatic nonce generation
 # Rails.application.config.content_security_policy_nonce_generator = -> request { SecureRandom.base64(16) }
