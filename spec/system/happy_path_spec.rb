@@ -8,9 +8,9 @@ RSpec.describe 'an happy path' do
     expect(page).to have_content(I18n.t('title'))
   end
 
-  it 'searches', :vcr  do
+  it 'searches', js: true  do
     visit root_path
-    find('#searchInput')
+    # find('#searchInput')
 
     expect(page).to have_content(I18n.t('title'))
     fill_in 'searchInput', with: "Jurassic"
@@ -18,6 +18,7 @@ RSpec.describe 'an happy path' do
     expect(page).to have_content(I18n.t('title'))
     expect(all('mat-card').size).to eq(10)
     fill_in 'searchInput', with: "Jurassic Park III: Island Attack"
+    sleep 1
     expect(all('mat-card').size).to eq(1)
   end
 end

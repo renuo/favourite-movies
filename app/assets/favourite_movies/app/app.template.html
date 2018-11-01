@@ -19,7 +19,7 @@ Your favourites:
 Search results:
 <mat-card *ngFor="let movie of movies">
     <mat-card-header>
-        <div *ngIf="movie.Poster" mat-card-avatar
+        <div *ngIf="movie.Poster && movie.Poster !== 'N/A'" mat-card-avatar
              [ngStyle]="{'background-image': 'url(' + movie.Poster +')', 'background-size': 'cover'}"></div>
         <mat-card-title>{{movie.Title}}</mat-card-title>
     </mat-card-header>
