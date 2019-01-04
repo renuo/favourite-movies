@@ -16,9 +16,8 @@ RSpec.describe 'an happy path' do
     fill_in 'searchInput', with: "Jurassic"
 
     expect(page).to have_content(I18n.t('title'))
-    expect(all('mat-card').size).to eq(10)
+    expect(page).to have_selector('mat-card', count: 10)
     fill_in 'searchInput', with: "Jurassic Park III: Island Attack"
-    sleep 1
-    expect(all('mat-card').size).to eq(1)
+    expect(page).to have_selector('mat-card', count: 1)
   end
 end
