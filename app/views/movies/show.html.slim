@@ -1,0 +1,21 @@
+p#notice = notice
+
+p
+  strong Comment:
+  = @movie.comment
+p
+  strong Title:
+  = @movie.title
+p
+  strong Exteranl:
+  = @movie.external_id
+p
+  strong Year:
+  = @movie.year
+p
+  strong Poster url:
+  = @movie.poster_url
+
+=> link_to 'Edit', edit_movie_path(@movie)
+'|
+=< link_to 'Back', movies_path

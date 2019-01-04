@@ -1,0 +1,24 @@
+h1 = t('title')
+
+= link_to t('buttons.go_to_favourites'), movies_path, class: 'btn btn-primary'
+
+.card data-controller="hello"
+  div[data-target="hello.messages"]
+  meta name="favourite-ids" data-target="hello.favourites" content=Movie.pluck(:external_id).compact.join(',')
+  .card-body
+    input type="text" data-target="hello.input" id="search-field"
+    button data-action="hello#search" class="btn btn-primary" = t('buttons.search')
+
+    .row[data-target="hello.output"]
+
+template[data-movie-template]
+  .col-4
+    .card[data-card data-movie-id]
+      img[class="card-img-top" data-image]
+      .card-body[data-body]
+        h5.card-title[data-title]
+        p.card-text[data-description]
+        a[href="#" class="btn btn-primary" data-action="hello#star"] = t('buttons.add_favourite')
+
+template[data-message]
+  .alert.alert-primary

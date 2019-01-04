@@ -1,2 +1,10 @@
 en:
   title: "Favourite movies"
+  buttons:
+    search: "Search"
+    add_favourite: "Add favourite"
+    go_to_favourites: "Go to favourite"
+    go_to_search: "Movies search"
+  movie:
+    create:
+      success: "Movie was successfully created."

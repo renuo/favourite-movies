@@ -1,0 +1,12 @@
+h1 My favourite movies
+
+.row
+  - @movies.each do |movie|
+    .col-4
+      .card
+        img class="card-img-top" src=movie.poster_url
+        .card-body
+          h5.card-title = movie.title
+          p.card-text
+
+= link_to t('buttons.go_to_search'), :back, class: 'btn btn-primary'

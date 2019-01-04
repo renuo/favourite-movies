@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  root 'home#show'
+  root 'movies#new'
+  resources :movies
 end
