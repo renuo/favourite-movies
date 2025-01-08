@@ -28,4 +28,4 @@ bin/check
 
 ## Copyright
 
-Coypright 2018 [Renuo AG](https://www.renuo.ch/).
+Copyright 2018 [Renuo AG](https://www.renuo.ch/).
